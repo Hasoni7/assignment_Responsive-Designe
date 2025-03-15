@@ -1,0 +1,40 @@
+@import "./header";
+@import "./container";
+@import "./fonts";
+@import "./main";
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  .intro {
+    max-width: 90%;
+    h1 {
+      font-size: 72px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+
+    nav ul {
+      display: none;
+    }
+  }
+
+  .intro {
+    max-width: 90%;
+    padding: 0 1rem;
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}

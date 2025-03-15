@@ -1,0 +1,42 @@
+@mixin poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin aldrich-regular {
+  .aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@mixin Source-Sans {
+  .source-sans-3-Regular {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+h3 {
+  @include aldrich-regular();
+  font-size: 24px;
+}
+
+h1 {
+  @include poppins-medium();
+  font-size: 90px;
+}
+
+nav {
+  @include Source-Sans();
+  font-size: 16px;
+}
+
+p {
+  @include Source-Sans();
+  font-size: 22px;
+}
